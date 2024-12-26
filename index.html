@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism Management</title>
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Chart.js Library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Tourism Management Website</h1>
+        <p>Discover the best times to visit your favorite destinations!</p>
+    </header>
+
+    <main>
+        <!-- Search Section -->
+        <section id="search">
+            <h2>Search for a Place</h2>
+            <form id="place-form">
+                <input type="text" id="place-name" placeholder="Enter the name of a tourist place" required>
+                <button type="submit">Search</button>
+            </form>
+        </section>
+
+        <!-- Results Section -->
+        <section id="results">
+            <h2>Results</h2>
+            <div id="output">
+                <p>No results yet. Start by searching for a place above.</p>
+            </div>
+
+            <!-- Crowd Chart Container -->
+            <div id="crowd-chart-container" style="display: none; margin-top: 20px;">
+                <h3>Crowd Data Analysis</h3>
+                <canvas id="crowd-chart" width="400" height="200"></canvas>
+            </div>
+
+            <!-- Events Section -->
+            <div id="events-container" style="display: none; margin-top: 20px;">
+                <h3>Upcoming Events</h3>
+                <ul id="events-list"></ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Include JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
